@@ -1,0 +1,21 @@
+@import "src/variables";
+
+.message {
+  position: fixed;
+  left: 50%;
+  bottom: -40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  background-color: @white;
+  padding: 8px 64px;
+  box-shadow: 0 0 2px 1px @gray;
+  font-size: 18px;
+  transform: translateX(-50%);
+  transition: bottom 0.3s;
+}
+
+.activeMessage {
+  bottom: 20px;
+}

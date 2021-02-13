@@ -1,0 +1,84 @@
+{
+  "name": "Address_book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js",
+    "start": "webpack-dev-server --color --progress --open --config webpack.dev.js",
+    "eslint": "eslint --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/testConfig.js"
+    ],
+    "transform": {
+      ".+\\.tsx?$": "ts-jest",
+      ".+\\.ts?$": "ts-jest",
+      ".+\\.js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "tsx",
+      "ts",
+      "js"
+    ],
+    "transformIgnorePatterns": [
+      "<rootDir>/node_modules/"
+    ],
+    "moduleNameMapper": {
+      "src/(.*)": "<rootDir>/src/$1",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@types/jest": "^26.0.20",
+    "@types/react": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "7.3.0",
+    "eslint-plugin-react": "^7.22.0",
+    "html-webpack-plugin": "^4.4.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-dom": "^4.0.0",
+    "less": "^4.1.1",
+    "less-loader": "7.3.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^4.2.3",
+    "ts-jest": "^26.5.1",
+    "typescript": "^4.1.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-merge": "^5.7.3"
+  }
+}
